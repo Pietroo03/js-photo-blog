@@ -23,4 +23,13 @@ header {
 
 main{
     background-image: url(../img/cork.png);
+
+    .photo{
+        border: 1px solid white;
+
+        .image{
+            height: 100px;
+            width: 100px;
+        }
+    }
 }
