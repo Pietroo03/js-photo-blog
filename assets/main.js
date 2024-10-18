@@ -9,11 +9,11 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
             const {title, url} = card
 
             const markup = `
-            <div class="col-3 m-3 photo">
+            <div class="col-12 col-md-5 col-lg-3 m-3 photo">
                 <div class="image">
                     <img src="${url}" alt="">    
                 </div>
-                <div class="description">
+                <div class="description fs-5">
                     ${title}
                 </div>
             </div>
@@ -22,4 +22,4 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
         })
 
         rowEl.innerHTML = cardElement
-    })
+    }) .catch(error => console.error(error)) 
