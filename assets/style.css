@@ -43,6 +43,9 @@ main{
         &:hover{
             scale: 1.2;
             rotate: 30deg;
+            .pin{
+                display: none;
+            }
         }
 
         .image{
