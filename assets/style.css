@@ -42,9 +42,11 @@ main{
         &:hover{
             scale: 1.2;
             rotate: 30deg;
+            z-index: 10;
             .pin{
                 display: none;
             }
+            
         }
 
         .image{
