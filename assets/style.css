@@ -36,7 +36,6 @@ main{
     background-image: url(../img/cork.png);
 
     .photo{
-        border: 1px solid white;
         background-color: white;
         transition: 0.5s;
 
