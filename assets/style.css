@@ -27,6 +27,12 @@ main{
     .photo{
         border: 1px solid white;
         background-color: white;
+        transition: 0.5s;
+
+        &:hover{
+            scale: 1.2;
+            rotate: 30deg;
+        }
 
         .image{
             padding-top: 1rem;
