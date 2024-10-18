@@ -11,12 +11,13 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
             const markup = `
             <div class="col-12 col-md-5 col-lg-3 m-3 photo">
                 <div class="image">
+                    <img class="pin" src="./img/pin.svg" alt="">
                     <img src="${url}" alt="">    
                 </div>
-                <div class="description fs-5">
+                <div class="description fs-3">
                     ${title}
                 </div>
-            </div>
+                </div>
             `
             cardElement += markup
         })
