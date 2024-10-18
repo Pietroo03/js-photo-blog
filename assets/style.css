@@ -30,6 +30,7 @@ main{
 
         .image{
             padding-top: 1rem;
+            position: relative;
 
             img{
                 max-width: 100%;
@@ -38,7 +39,8 @@ main{
             .pin{
                 position: absolute;
                 left: 50%;
-                top: 25px;
+                top: -2%;
+                transform: translate(-50%, 2%);
             }
         }
 
