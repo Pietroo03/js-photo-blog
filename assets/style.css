@@ -26,10 +26,16 @@ main{
 
     .photo{
         border: 1px solid white;
+        background-color: white;
 
         .image{
-            height: 100px;
-            width: 100px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+
+            img{
+                max-width: 100%;
+            }
         }
     }
 }
