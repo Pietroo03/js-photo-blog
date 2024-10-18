@@ -4,17 +4,20 @@
     box-sizing: border-box;
 }
 
-body {
+main {
     font-style: italic;
-    font-family: "Handlee", cursive;
+    font-family: "Edu TAS Beginner", cursive;
 }
 
 header {
+    font-family: "Sometype Mono", monospace;
+    font-style: italic;
     background-image: url(../img/wall.png);
     padding: 1rem;
 
     h1{
         font-size: 3rem;
+        font-weight: bold;
     }
 }
 
