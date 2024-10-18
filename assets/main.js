@@ -7,7 +7,8 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
         let cardElement = ''
         cards.forEach(card => {
             const {title, url} = card
-
+            console.log(card);
+            
             const markup = `
             <div class="col-12 col-md-5 col-lg-3 m-3 photo">
                 <div class="image">
@@ -20,6 +21,8 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
                 </div>
             `
             cardElement += markup
+            console.log(cardElement);
+            
         })
 
         rowEl.innerHTML = cardElement
