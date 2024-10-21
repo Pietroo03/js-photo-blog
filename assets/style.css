@@ -15,8 +15,18 @@
     background-color: rgba(0, 0, 0, 0.548);
     cursor: pointer; 
 
-    .img-overlay{
-        padding-top: 50%;
+    img{
+        position: absolute;
+        top: 25%; 
+        left: 50%;
+        transform: translate(-50%, -25%);
+    }
+
+    button{
+        position: absolute;
+        top: 2%; 
+        left: 50%;
+        transform: translate(-50%, -2%);
     }
 }
 
