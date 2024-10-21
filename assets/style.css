@@ -13,20 +13,18 @@
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.548);
-    cursor: pointer; 
+    cursor: pointer;
+    z-index: 100;
 
     img{
-        position: absolute;
-        top: 25%; 
+        position: fixed;
         left: 50%;
-        transform: translate(-50%, -25%);
+        transform: translate(-50%);
+        padding-top: 8rem;
     }
 
     button{
-        position: absolute;
-        top: 2%; 
-        left: 50%;
-        transform: translate(-50%, -2%);
+        margin-top: 2rem;
     }
 }
 

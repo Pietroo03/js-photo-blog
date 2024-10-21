@@ -24,24 +24,22 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
             rowEl.innerHTML = cardElement
 
-            
         })
 
         const overlayEl = document.getElementById('overlay')
         const buttonEl = document.querySelector('button')
-        /* const imgOverlayEl = document.querySelector('img-overlay') */
         const imgEl = document.querySelectorAll('.card-img')
 
         for (let i = 0; i < imgEl.length; i++) {
             const singleImg = imgEl[i];
             console.log(singleImg);
-            
+
             singleImg.addEventListener("click", () => {
                 overlayEl.classList.remove('d-none')
                 let overlayElementsEl = ''
                 const markup = `
-                <button type="button" class="text-center p-1">Chiudi</button>
-                <img class="img-overlay" src="${singleImg.src}" alt="">
+                <button type="button" class="text-center p-2">Chiudi</button>
+                <img src="${singleImg.src}" alt="">
                 `
                 overlayElementsEl += markup
                 overlayEl.innerHTML = overlayElementsEl
@@ -51,15 +49,6 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
             })
             
         }
-
- 
-        
-
-
-        
-
-        
-
 
     }).catch(error => console.error(error))
 
