@@ -11,7 +11,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
             const markup = `
             <div class="col-12 col-md-5 col-lg-3 m-3 photo">
                 <div class="image">
-                    <img id="card-img" src="${url}" alt="">    
+                    <img class="card-img" src="${url}" alt="">    
                     <img class="pin" src="./img/pin.svg" alt="">
                 </div>
                 <div class="description">
@@ -26,21 +26,29 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
             
         })
-        
-        let imgEl = document.getElementById('card-img')
-        console.log(imgEl);
- 
+
         const overlayEl = document.getElementById('overlay')
         const buttonEl = document.querySelector('button')
+        const imgEl = document.querySelectorAll('.card-img')
+
+        for (let i = 0; i < imgEl.length; i++) {
+            const singleImg = imgEl[i];
+            console.log(singleImg);
+            singleImg.addEventListener("click", () => {
+                overlayEl.classList.remove('d-none')
+            }) 
+            buttonEl, overlayEl.addEventListener('click', () => {
+                overlayEl.classList.add('d-none')
+            })
+        }
+
+ 
+        
 
 
-        /* imgEl.addEventListener("click", () => {
-            overlayEl.classList.remove('d-none')
-        });
+        
 
-        buttonEl, overlayEl.addEventListener('click', () => {
-            overlayEl.classList.add('d-none')
-        }) */
+        
 
 
     }).catch(error => console.error(error))
