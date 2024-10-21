@@ -38,7 +38,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
                 overlayEl.classList.remove('d-none')
                 let overlayElementsEl = ''
                 const markup = `
-                <button type="button" class="text-center p-2">Chiudi</button>
+                <button type="button" class="text-center p-2 btn btn-light">Chiudi</button>
                 <img src="${singleImg.src}" alt="">
                 `
                 overlayElementsEl += markup
