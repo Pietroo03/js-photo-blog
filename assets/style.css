@@ -1,12 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main {
-    font-style: italic;
-    font-family: "Edu TAS Beginner", cursive;
+
+#overlay {
+    /* position: fixed; */
+    /* display: none; */
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.548);
+    filter: brightness(50%);
+    cursor: pointer; 
+    z-index: 101;
+
+
+    .img-overlay{
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 100;
+        
+    }
 }
 
 header {
@@ -15,49 +32,54 @@ header {
     background-image: url(../img/wall.png);
     padding: 1rem;
 
-    h1{
+    h1 {
         font-size: 3rem;
-        font-weight: bold; 
+        font-weight: bold;
     }
-    
+
     @media screen and (max-width: 991px) {
-        h1{
+        h1 {
             font-size: 4rem
         }
     }
+
     @media screen and (max-width: 767px) {
-        h1{
+        h1 {
             font-size: 5rem
         }
     }
 }
 
-main{
+main {
+    font-style: italic;
+    font-family: "Edu TAS Beginner", cursive;
     background-image: url(../img/cork.png);
 
-    .photo{
+    .photo {
         background-color: white;
         transition: 0.5s;
 
-        &:hover{
+        &:hover {
             scale: 1.2;
-            rotate: 30deg;
+            rotate: 20deg;
             z-index: 10;
-            .pin{
+
+            .pin {
                 display: none;
             }
-            
+
         }
 
-        .image{
+        .image {
             padding-top: 1rem;
             position: relative;
 
-            img{
+            img {
                 max-width: 100%;
+                cursor: pointer;
             }
 
-            .pin{
+            .pin {
                 position: absolute;
                 left: 50%;
                 top: -2%;
@@ -65,18 +87,20 @@ main{
             }
         }
 
-        .description{
+        .description {
             padding-top: 1rem;
             padding-bottom: 1rem;
             font-size: 1.5rem;
         }
+
         @media screen and (max-width: 991px) {
-            .description{
+            .description {
                 font-size: 2rem
             }
         }
+
         @media screen and (max-width: 767px) {
-            .description{
+            .description {
                 font-size: 3rem
             }
         }

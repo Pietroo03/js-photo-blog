@@ -13,7 +13,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
             <div class="col-12 col-md-5 col-lg-3 m-3 photo">
                 <div class="image">
                     <img class="pin" src="./img/pin.svg" alt="">
-                    <img src="${url}" alt="">    
+                    <img class="card-img" type="button" src="${url}" alt="">    
                 </div>
                 <div class="description">
                     ${title}
