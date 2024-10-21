@@ -59,7 +59,7 @@ main {
 
     .photo {
         background-color: white;
-        transition: 0.5s;
+        transition: 0.7s;
 
         &:hover {
             scale: 1.2;
