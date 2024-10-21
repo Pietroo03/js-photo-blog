@@ -35,13 +35,16 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
         for (let i = 0; i < imgEl.length; i++) {
             const singleImg = imgEl[i];
             console.log(singleImg);
-            const markup = `
-            <button type="button" class="text-center p-1">Chiudi</button>
-            <img class="img-overlay" src="${singleImg.src}" alt="">
-            `
-            overlayEl.innerHTML = markup
+            
             singleImg.addEventListener("click", () => {
                 overlayEl.classList.remove('d-none')
+                let overlayElementsEl = ''
+                const markup = `
+                <button type="button" class="text-center p-1">Chiudi</button>
+                <img class="img-overlay" src="${singleImg.src}" alt="">
+                `
+                overlayElementsEl += markup
+                overlayEl.innerHTML = overlayElementsEl
             }) 
             buttonEl, overlayEl.addEventListener('click', () => {
                 overlayEl.classList.add('d-none')
