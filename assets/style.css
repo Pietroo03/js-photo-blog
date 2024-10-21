@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
 
 #overlay {
     position: fixed;
@@ -56,6 +59,7 @@ main {
     font-style: italic;
     font-family: "Edu TAS Beginner", cursive;
     background-image: url(../img/cork.png);
+    padding: 8.5rem 0;
 
     .photo {
         background-color: white;
